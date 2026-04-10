@@ -1,21 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
+  --background: #FAF6F1;
   --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
 }
 
 body {
   color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  background: #FAF6F1;
+  font-family: 'Nunito', sans-serif;
+}
+
+.answer-btn {
+  background: #FAF6F1;
+  border: 2px solid #EDE8E2;
+  border-radius: 16px;
+  padding: 18px 14px;
+  text-align: left;
+  cursor: pointer;
+  font-family: 'Nunito', sans-serif;
+  transition: border-color 0.15s, background 0.15s;
+}
+
+.answer-btn:hover {
+  border-color: #E8440A;
+  background: #FFF5F1;
+}
+
+.answer-btn--selected {
+  border-color: #E8440A !important;
+  background: #FFF5F1 !important;
 }
