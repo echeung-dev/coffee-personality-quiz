@@ -1,3 +1,3 @@
 {
-  "installCommand": "npm install --registry https://registry.npmjs.org --legacy-peer-deps"
+  "installCommand": "npx --yes pnpm install --registry https://registry.npmjs.org"
 }
